@@ -13,6 +13,7 @@ const hasId = propEq('id');
 
 export const reducer = (state = {}, action) => {
   let todoIndex;
+
   switch (action.type) {
     case 'ADD_TODO':
       return evolve(
